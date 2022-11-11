@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina principal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
+        rel="stylesheet"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+
+<body>
+   <header class="encabezado">
+    <div class="contenedor-navegacion">
+        <div class="contenido-navegacion contenedor">
+            <div class="logo">
+                <h2><span class="S">SalLMe</span> <span class="T">This</span></h2>
+            </div>
+            <nav class="navegacion ocultar">
+                <a href="">Inicio</a>
+                <a href="">Sobre Nosotros</a>
+                <a href="">Menu</a>
+                <a href="">Chef</a>
+                <a href="">Contactos</a>
+            </nav>
+            <div class="hamburguesa">
+                <span class="line1__bars-menu"></span>
+                <span class="line2__bars-menu"></span>
+                <span class="line3__bars-menu"></span>
+            </div>
+        </div>
+    </div>
+   </header>
+
+</body>
+
+:root{
+    --1: #000010;
+    --2: #cacac8;
+    --3: #ffffff;
+    --4: #b6846b;
+    --5: #f73149;
+    --verde: #00A149;
+    --blanco: #fff;
+    --rojo: #881014;
+    --oscuro: #000;
+    --titulos:'Arima Madurai',cursive;
+    --parrafos:'Mulish', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+    /*1rem = 10px*/
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+
+/*globales*/
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+
+h1,h2{
+    font-size: var(--titulos);
+}
+
+h3, p, a{
+    font-size: var(--parrafos);
+}
+
+.S{
+    color: var(--2);
+}
+.T{
+        color: var(--5);
+}
+
+.ocultar{
+    display: none;
+}
+
+/*Encabezado*/
+
+.contenedor-navegacion{
+    background-color: var(--1);
+}
+
+.contenido-navegacion{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h2, .navegacion a{
+    color: var(--3);
+}
+
+.logo h2{
+    font-size: 2.5rem;
+}
+
+.navegacion a{
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.hamburguesa{
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--oscuro);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+.hamburguesa span{
+        clear: left;
+        display: inline-block;
+        width: 100%;
+        height: 0.2rem;
+        background-color: var(--oscuro);
+    }
