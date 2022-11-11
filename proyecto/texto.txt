@@ -1,0 +1,6 @@
+Las carpetas 
+css
+img
+js
+vendor 
+van dentro de una sola carpeta llamada assets, se envia de manera individual ya que no dejaba cargarla en una sola
